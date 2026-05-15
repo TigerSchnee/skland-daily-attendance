@@ -1,0 +1,28 @@
+shellEmulator: true
+
+trustPolicy: no-downgrade
+
+trustPolicyExclude:
+  - chokidar@4.0.3
+  - undici@5.29.0
+catalogs:
+  build:
+    rolldown: 1.0.0
+  dev:
+    '@actions/core': ^3.0.1
+    '@antfu/eslint-config': ^9.0.0
+    eslint: ^10.3.0
+    nitro: 3.0.260429-beta
+    typescript: ^6.0.3
+    wait-on: ^9.0.10
+    wrangler: ^4.90.1
+  lib:
+    '@upstash/redis': ^1.38.0
+    aws4fetch: ^1.0.20
+    ioredis: ^5.10.1
+    skland-kit: ^0.3.4
+    statocysts: ^0.11.1
+    unctx: ^2.5.0
+    unstorage: 2.0.0-alpha.7
+  types:
+    '@types/node': ^25.7.0
